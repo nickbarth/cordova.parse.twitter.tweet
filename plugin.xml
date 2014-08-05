@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.parse.twitter.tweet" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSTwitterTweet</name>
+  <description>Plugin for iOS to retrieve the Twitter tweet.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS Twitter Tweet</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSTwitterTweet.js" name="iOSTwitterTweet" target="www/iOSTwitterTweet.js">
+    <clobbers target="window.iOSTwitterTweet" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSTwitterTweet">
+        <param name="ios-package" value="iOSTwitterTweet"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSTwitterTweet" value="iOSTwitterTweet"/>
+    </config-file>
+    <header-file src="src/ios/iOSTwitterTweet.h" />
+    <source-file src="src/ios/iOSTwitterTweet.m" />
+
+    <framework src="Accounts.framework" />
+    <framework src="Social.framework" />
+  </platform>
+</plugin>
