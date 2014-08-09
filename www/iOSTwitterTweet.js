@@ -11,7 +11,7 @@ var iOSTwitterTweet = function(status, callback) {
     return callback(null, data.tweet);
   }
 
-  exec(iOSTwitterTweetReturn, iOSTwitterTweetReturn, 'iOSTwitterTweet', 'iOSTwitterTweet', [status]);
+  exec(iOSTwitterTweetReturn, iOSTwitterTweetReturn, 'iOSTwitterTweet', 'iOSTwitterTweet', [encodeURIComponent(status)]);
 };
 
 module.exports = iOSTwitterTweet;
