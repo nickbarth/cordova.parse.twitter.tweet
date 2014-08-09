@@ -23,7 +23,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"POST";
 
-    NSString *status = [NSString stringWithFormat:@"status=%@", [[command.arguments objectAtIndex:0] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *status = [NSString stringWithFormat:@"status=%@", [command.arguments objectAtIndex:0]];
     status = [status stringByReplacingOccurrencesOfString:@"!" withString:@"%21"];
     request.HTTPBody = [status dataUsingEncoding:NSUTF8StringEncoding];
 
