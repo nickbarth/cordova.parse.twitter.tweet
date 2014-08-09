@@ -17,8 +17,8 @@ window.iOSTwitterTweet("New Tweet! : )", function (err, tweet) {
 
 ## Adding the Plugin ##
 
-```
-  cordova plugin add https://github.com/nickbarth/cordova.parse.twitter.tweet.git
+```bash
+cordova plugin add https://github.com/nickbarth/cordova.parse.twitter.tweet.git
 ```
 
 ## LICENSE ##
