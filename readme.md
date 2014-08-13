@@ -22,5 +22,6 @@ cordova plugin add https://github.com/nickbarth/cordova.parse.twitter.tweet.git
 ```
 
 ## LICENSE ##
+The CC0 License
 
-The MIT License
+[![CC0](http://i.creativecommons.org/l/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
