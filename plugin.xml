@@ -7,7 +7,7 @@
   <description>Plugin for iOS to retrieve the Twitter tweet.</description>
   <author>Nick Barth</author>
   <keywords>iOS Twitter Tweet</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSTwitterTweet.js" name="iOSTwitterTweet" target="www/iOSTwitterTweet.js">
